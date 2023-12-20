@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E87E3BB12B2B0CB8003E61DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BB02B2B0CB8003E61DF /* AppDelegate.swift */; };
+		E87E3BB32B2B0CB8003E61DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BB22B2B0CB8003E61DF /* SceneDelegate.swift */; };
+		E87E3BBA2B2B0CBA003E61DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BB92B2B0CBA003E61DF /* Assets.xcassets */; };
+		E87E3BBD2B2B0CBA003E61DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BBB2B2B0CBA003E61DF /* LaunchScreen.storyboard */; };
+		E87E3BCC2B32B96E003E61DF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BCB2B32B96E003E61DF /* Task.swift */; };
+		E87E3BCE2B32BA18003E61DF /* TaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BCD2B32BA18003E61DF /* TaskInteractor.swift */; };
+		E87E3BD02B32BA2C003E61DF /* TaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BCF2B32BA2C003E61DF /* TaskPresenter.swift */; };
+		E87E3BD22B32BA4F003E61DF /* TaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BD12B32BA4F003E61DF /* TaskRouter.swift */; };
+		E87E3BD42B32BB5F003E61DF /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BD32B32BB5F003E61DF /* TaskView.swift */; };
+		E87E3BD82B32D22F003E61DF /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BD62B32D22F003E61DF /* TasksViewController.swift */; };
+		E87E3BD92B32D22F003E61DF /* TasksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BD72B32D22F003E61DF /* TasksViewController.xib */; };
+		E87E3BDD2B32D297003E61DF /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BDB2B32D297003E61DF /* TaskTableViewCell.swift */; };
+		E87E3BDE2B32D297003E61DF /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BDC2B32D297003E61DF /* TaskTableViewCell.xib */; };
+		E87E3BE12B32D59B003E61DF /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BE02B32D59B003E61DF /* UITableView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E87E3BAD2B2B0CB8003E61DF /* Viper Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E87E3BB02B2B0CB8003E61DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E87E3BB22B2B0CB8003E61DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E87E3BB92B2B0CBA003E61DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E87E3BBC2B2B0CBA003E61DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E87E3BBE2B2B0CBA003E61DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E87E3BCB2B32B96E003E61DF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		E87E3BCD2B32BA18003E61DF /* TaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInteractor.swift; sourceTree = "<group>"; };
+		E87E3BCF2B32BA2C003E61DF /* TaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPresenter.swift; sourceTree = "<group>"; };
+		E87E3BD12B32BA4F003E61DF /* TaskRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRouter.swift; sourceTree = "<group>"; };
+		E87E3BD32B32BB5F003E61DF /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		E87E3BD62B32D22F003E61DF /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		E87E3BD72B32D22F003E61DF /* TasksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksViewController.xib; sourceTree = "<group>"; };
+		E87E3BDB2B32D297003E61DF /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		E87E3BDC2B32D297003E61DF /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		E87E3BE02B32D59B003E61DF /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E87E3BAA2B2B0CB8003E61DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E87E3BA42B2B0CB8003E61DF = {
+			isa = PBXGroup;
+			children = (
+				E87E3BAF2B2B0CB8003E61DF /* Viper Practice */,
+				E87E3BAE2B2B0CB8003E61DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E87E3BAE2B2B0CB8003E61DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E87E3BAD2B2B0CB8003E61DF /* Viper Practice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E87E3BAF2B2B0CB8003E61DF /* Viper Practice */ = {
+			isa = PBXGroup;
+			children = (
+				E87E3BDF2B32D585003E61DF /* extentions */,
+				E87E3BC52B306CC0003E61DF /* Application */,
+				E87E3BC42B306CAA003E61DF /* src */,
+				E87E3BB92B2B0CBA003E61DF /* Assets.xcassets */,
+				E87E3BBB2B2B0CBA003E61DF /* LaunchScreen.storyboard */,
+				E87E3BBE2B2B0CBA003E61DF /* Info.plist */,
+			);
+			path = "Viper Practice";
+			sourceTree = "<group>";
+		};
+		E87E3BC42B306CAA003E61DF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E87E3BD52B32D218003E61DF /* controllers */,
+				E87E3BC62B306D17003E61DF /* view */,
+				E87E3BC72B306ED0003E61DF /* interactor */,
+				E87E3BC82B306EEA003E61DF /* presenter */,
+				E87E3BCA2B306F1D003E61DF /* entity */,
+				E87E3BC92B306F07003E61DF /* router */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		E87E3BC52B306CC0003E61DF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E87E3BB22B2B0CB8003E61DF /* SceneDelegate.swift */,
+				E87E3BB02B2B0CB8003E61DF /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E87E3BC62B306D17003E61DF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E87E3BD32B32BB5F003E61DF /* TaskView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E87E3BC72B306ED0003E61DF /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E87E3BCD2B32BA18003E61DF /* TaskInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		E87E3BC82B306EEA003E61DF /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E87E3BCF2B32BA2C003E61DF /* TaskPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		E87E3BC92B306F07003E61DF /* router */ = {
+			isa = PBXGroup;
+			children = (
+				E87E3BD12B32BA4F003E61DF /* TaskRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		E87E3BCA2B306F1D003E61DF /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				E87E3BCB2B32B96E003E61DF /* Task.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		E87E3BD52B32D218003E61DF /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E87E3BDA2B32D27F003E61DF /* Cells */,
+				E87E3BD62B32D22F003E61DF /* TasksViewController.swift */,
+				E87E3BD72B32D22F003E61DF /* TasksViewController.xib */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		E87E3BDA2B32D27F003E61DF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E87E3BDB2B32D297003E61DF /* TaskTableViewCell.swift */,
+				E87E3BDC2B32D297003E61DF /* TaskTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E87E3BDF2B32D585003E61DF /* extentions */ = {
+			isa = PBXGroup;
+			children = (
+				E87E3BE02B32D59B003E61DF /* UITableView.swift */,
+			);
+			path = extentions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E87E3BAC2B2B0CB8003E61DF /* Viper Practice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E87E3BC12B2B0CBA003E61DF /* Build configuration list for PBXNativeTarget "Viper Practice" */;
+			buildPhases = (
+				E87E3BA92B2B0CB8003E61DF /* Sources */,
+				E87E3BAA2B2B0CB8003E61DF /* Frameworks */,
+				E87E3BAB2B2B0CB8003E61DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Viper Practice";
+			productName = "Viper Practice";
+			productReference = E87E3BAD2B2B0CB8003E61DF /* Viper Practice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E87E3BA52B2B0CB8003E61DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E87E3BAC2B2B0CB8003E61DF = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = E87E3BA82B2B0CB8003E61DF /* Build configuration list for PBXProject "Viper Practice" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E87E3BA42B2B0CB8003E61DF;
+			productRefGroup = E87E3BAE2B2B0CB8003E61DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E87E3BAC2B2B0CB8003E61DF /* Viper Practice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E87E3BAB2B2B0CB8003E61DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87E3BBD2B2B0CBA003E61DF /* LaunchScreen.storyboard in Resources */,
+				E87E3BD92B32D22F003E61DF /* TasksViewController.xib in Resources */,
+				E87E3BBA2B2B0CBA003E61DF /* Assets.xcassets in Resources */,
+				E87E3BDE2B32D297003E61DF /* TaskTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E87E3BA92B2B0CB8003E61DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87E3BD22B32BA4F003E61DF /* TaskRouter.swift in Sources */,
+				E87E3BCC2B32B96E003E61DF /* Task.swift in Sources */,
+				E87E3BDD2B32D297003E61DF /* TaskTableViewCell.swift in Sources */,
+				E87E3BCE2B32BA18003E61DF /* TaskInteractor.swift in Sources */,
+				E87E3BD02B32BA2C003E61DF /* TaskPresenter.swift in Sources */,
+				E87E3BB12B2B0CB8003E61DF /* AppDelegate.swift in Sources */,
+				E87E3BB32B2B0CB8003E61DF /* SceneDelegate.swift in Sources */,
+				E87E3BE12B32D59B003E61DF /* UITableView.swift in Sources */,
+				E87E3BD42B32BB5F003E61DF /* TaskView.swift in Sources */,
+				E87E3BD82B32D22F003E61DF /* TasksViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E87E3BBB2B2B0CBA003E61DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E87E3BBC2B2B0CBA003E61DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E87E3BBF2B2B0CBA003E61DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E87E3BC02B2B0CBA003E61DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E87E3BC22B2B0CBA003E61DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Viper Practice/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huzaifa.Viper-Practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E87E3BC32B2B0CBA003E61DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Viper Practice/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huzaifa.Viper-Practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E87E3BA82B2B0CB8003E61DF /* Build configuration list for PBXProject "Viper Practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E87E3BBF2B2B0CBA003E61DF /* Debug */,
+				E87E3BC02B2B0CBA003E61DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E87E3BC12B2B0CBA003E61DF /* Build configuration list for PBXNativeTarget "Viper Practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E87E3BC22B2B0CBA003E61DF /* Debug */,
+				E87E3BC32B2B0CBA003E61DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E87E3BA52B2B0CB8003E61DF /* Project object */;
+}
