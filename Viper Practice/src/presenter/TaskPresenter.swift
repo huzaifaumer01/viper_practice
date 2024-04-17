@@ -9,7 +9,7 @@ import Foundation
 
 protocol TaskPresenterProtocol : AnyObject {
     func loadView()
-    func taskFetched(_ tasks: [Task])
+    func taskFetched(_ fruits: [Fruit])
 }
 
 class TaskPresenter : TaskPresenterProtocol {
@@ -22,7 +22,7 @@ class TaskPresenter : TaskPresenterProtocol {
         interactor?.fetchTasks()
     }
     
-    func taskFetched(_ tasks: [Task]) {
+    func taskFetched(_ tasks: [Fruit]) {
         view?.displayTasks(tasks)
     }
 }

@@ -26,8 +26,8 @@ class TaskTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(task: Task){
-        titleLabel.text = task.title
-        detailLabel.text = task.description
+    func configureCell(task: Fruit){
+        titleLabel.text = task.name
+        detailLabel.text = task.family
     }
 }

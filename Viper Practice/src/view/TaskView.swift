@@ -8,5 +8,5 @@
 import Foundation
 
 protocol TaskViewProtocol : AnyObject {
-    func displayTasks(_ tasks: [Task])
+    func displayTasks(_ tasks: [Fruit])
 }

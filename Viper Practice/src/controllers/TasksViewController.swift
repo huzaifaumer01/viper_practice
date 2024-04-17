@@ -11,7 +11,7 @@ class TasksViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var presenter : TaskPresenterProtocol?
-    var tasks = [Task]()
+    var tasks = [Fruit]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +23,11 @@ class TasksViewController: UIViewController {
 }
 
 extension TasksViewController : TaskViewProtocol {
-    func displayTasks(_ tasks: [Task]) {
+    func displayTasks(_ tasks: [Fruit]) {
         self.tasks.append(contentsOf: tasks)
-        tableView.reloadData()
+        DispatchQueue.main.async {[weak self] in
+            self?.tableView.reloadData()
+        }
     }
 }
 
