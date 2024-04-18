@@ -22,7 +22,6 @@
 		E87E3BB32B2B0CB8003E61DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BB22B2B0CB8003E61DF /* SceneDelegate.swift */; };
 		E87E3BBA2B2B0CBA003E61DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BB92B2B0CBA003E61DF /* Assets.xcassets */; };
 		E87E3BBD2B2B0CBA003E61DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BBB2B2B0CBA003E61DF /* LaunchScreen.storyboard */; };
-		E87E3BCC2B32B96E003E61DF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BCB2B32B96E003E61DF /* Task.swift */; };
 		E87E3BCE2B32BA18003E61DF /* TaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BCD2B32BA18003E61DF /* TaskInteractor.swift */; };
 		E87E3BD02B32BA2C003E61DF /* TaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BCF2B32BA2C003E61DF /* TaskPresenter.swift */; };
 		E87E3BD22B32BA4F003E61DF /* TaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BD12B32BA4F003E61DF /* TaskRouter.swift */; };
@@ -32,6 +31,12 @@
 		E87E3BDD2B32D297003E61DF /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BDB2B32D297003E61DF /* TaskTableViewCell.swift */; };
 		E87E3BDE2B32D297003E61DF /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BDC2B32D297003E61DF /* TaskTableViewCell.xib */; };
 		E87E3BE12B32D59B003E61DF /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BE02B32D59B003E61DF /* UITableView.swift */; };
+		E8A34B192BD1135200E91BED /* Fruites.json in Resources */ = {isa = PBXBuildFile; fileRef = E8A34B182BD112CA00E91BED /* Fruites.json */; };
+		E8A34B1E2BD1168400E91BED /* JSONFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A34B1D2BD1168400E91BED /* JSONFileManager.swift */; };
+		E8A34B202BD116DB00E91BED /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A34B1F2BD116DB00E91BED /* AppConfiguration.swift */; };
+		E8A34B232BD1183000E91BED /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A34B222BD1183000E91BED /* Strings.swift */; };
+		E8A34B252BD11A7A00E91BED /* MockDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A34B242BD11A7A00E91BED /* MockDataGenerator.swift */; };
+		E8A34B282BD1353F00E91BED /* FruitesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A34B272BD1353F00E91BED /* FruitesRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +55,6 @@
 		E87E3BB92B2B0CBA003E61DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E87E3BBC2B2B0CBA003E61DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E87E3BBE2B2B0CBA003E61DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E87E3BCB2B32B96E003E61DF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		E87E3BCD2B32BA18003E61DF /* TaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInteractor.swift; sourceTree = "<group>"; };
 		E87E3BCF2B32BA2C003E61DF /* TaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPresenter.swift; sourceTree = "<group>"; };
 		E87E3BD12B32BA4F003E61DF /* TaskRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRouter.swift; sourceTree = "<group>"; };
@@ -60,6 +64,12 @@
 		E87E3BDB2B32D297003E61DF /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		E87E3BDC2B32D297003E61DF /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		E87E3BE02B32D59B003E61DF /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		E8A34B182BD112CA00E91BED /* Fruites.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fruites.json; sourceTree = "<group>"; };
+		E8A34B1D2BD1168400E91BED /* JSONFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileManager.swift; sourceTree = "<group>"; };
+		E8A34B1F2BD116DB00E91BED /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		E8A34B222BD1183000E91BED /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		E8A34B242BD11A7A00E91BED /* MockDataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataGenerator.swift; sourceTree = "<group>"; };
+		E8A34B272BD1353F00E91BED /* FruitesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitesRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 		D921F38D2BBC05DD00C7D35E /* networking */ = {
 			isa = PBXGroup;
 			children = (
+				E8A34B262BD134DA00E91BED /* Repositories */,
 				D921F3AF2BBC1E3200C7D35E /* API.swift */,
 				D921F3AE2BBC1E3200C7D35E /* APIConfig.swift */,
 				D921F3B12BBC1E3200C7D35E /* HTTPClient.swift */,
@@ -107,7 +118,6 @@
 		E87E3BAF2B2B0CB8003E61DF /* Viper Practice */ = {
 			isa = PBXGroup;
 			children = (
-				E87E3BDF2B32D585003E61DF /* extentions */,
 				E87E3BC52B306CC0003E61DF /* Application */,
 				E87E3BC42B306CAA003E61DF /* src */,
 				E87E3BB92B2B0CBA003E61DF /* Assets.xcassets */,
@@ -120,6 +130,7 @@
 		E87E3BC42B306CAA003E61DF /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E8A34B1A2BD1162D00E91BED /* helpers */,
 				D921F38D2BBC05DD00C7D35E /* networking */,
 				E87E3BD52B32D218003E61DF /* controllers */,
 				E87E3BC62B306D17003E61DF /* view */,
@@ -127,7 +138,6 @@
 				E87E3BC82B306EEA003E61DF /* presenter */,
 				E87E3BCA2B306F1D003E61DF /* entity */,
 				E87E3BC92B306F07003E61DF /* router */,
-				D921F39A2BBC092500C7D35E /* Constants.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -137,6 +147,7 @@
 			children = (
 				E87E3BB22B2B0CB8003E61DF /* SceneDelegate.swift */,
 				E87E3BB02B2B0CB8003E61DF /* AppDelegate.swift */,
+				E8A34B1F2BD116DB00E91BED /* AppConfiguration.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -176,7 +187,8 @@
 		E87E3BCA2B306F1D003E61DF /* entity */ = {
 			isa = PBXGroup;
 			children = (
-				E87E3BCB2B32B96E003E61DF /* Task.swift */,
+				E8A34B162BD111C400E91BED /* Mock Data */,
+				E8A34B172BD1120300E91BED /* Mock */,
 				D921F3B92BBC1E5A00C7D35E /* Fruit.swift */,
 				D921F39E2BBC0A8200C7D35E /* Nutritions.swift */,
 			);
@@ -208,6 +220,65 @@
 				E87E3BE02B32D59B003E61DF /* UITableView.swift */,
 			);
 			path = extentions;
+			sourceTree = "<group>";
+		};
+		E8A34B162BD111C400E91BED /* Mock Data */ = {
+			isa = PBXGroup;
+			children = (
+				E8A34B182BD112CA00E91BED /* Fruites.json */,
+			);
+			path = "Mock Data";
+			sourceTree = "<group>";
+		};
+		E8A34B172BD1120300E91BED /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				E8A34B242BD11A7A00E91BED /* MockDataGenerator.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		E8A34B1A2BD1162D00E91BED /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E8A34B212BD1181C00E91BED /* Localization */,
+				E8A34B1C2BD1166200E91BED /* fileManager */,
+				E87E3BDF2B32D585003E61DF /* extentions */,
+				E8A34B1B2BD1164200E91BED /* Constants */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		E8A34B1B2BD1164200E91BED /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D921F39A2BBC092500C7D35E /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E8A34B1C2BD1166200E91BED /* fileManager */ = {
+			isa = PBXGroup;
+			children = (
+				E8A34B1D2BD1168400E91BED /* JSONFileManager.swift */,
+			);
+			path = fileManager;
+			sourceTree = "<group>";
+		};
+		E8A34B212BD1181C00E91BED /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				E8A34B222BD1183000E91BED /* Strings.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		E8A34B262BD134DA00E91BED /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E8A34B272BD1353F00E91BED /* FruitesRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E87E3BBD2B2B0CBA003E61DF /* LaunchScreen.storyboard in Resources */,
+				E8A34B192BD1135200E91BED /* Fruites.json in Resources */,
 				E87E3BD92B32D22F003E61DF /* TasksViewController.xib in Resources */,
 				E87E3BBA2B2B0CBA003E61DF /* Assets.xcassets in Resources */,
 				E87E3BDE2B32D297003E61DF /* TaskTableViewCell.xib in Resources */,
@@ -290,21 +362,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				E87E3BD22B32BA4F003E61DF /* TaskRouter.swift in Sources */,
+				E8A34B1E2BD1168400E91BED /* JSONFileManager.swift in Sources */,
 				D921F39F2BBC0A8200C7D35E /* Nutritions.swift in Sources */,
 				D921F3B72BBC1E3200C7D35E /* HTTPClient.swift in Sources */,
 				D921F39B2BBC092500C7D35E /* Constants.swift in Sources */,
-				E87E3BCC2B32B96E003E61DF /* Task.swift in Sources */,
 				D921F3B62BBC1E3200C7D35E /* HTTPError.swift in Sources */,
 				D921F3B52BBC1E3200C7D35E /* API.swift in Sources */,
 				E87E3BDD2B32D297003E61DF /* TaskTableViewCell.swift in Sources */,
+				E8A34B252BD11A7A00E91BED /* MockDataGenerator.swift in Sources */,
 				E87E3BCE2B32BA18003E61DF /* TaskInteractor.swift in Sources */,
 				D921F3B42BBC1E3200C7D35E /* APIConfig.swift in Sources */,
 				E87E3BD02B32BA2C003E61DF /* TaskPresenter.swift in Sources */,
+				E8A34B232BD1183000E91BED /* Strings.swift in Sources */,
+				E8A34B202BD116DB00E91BED /* AppConfiguration.swift in Sources */,
 				E87E3BB12B2B0CB8003E61DF /* AppDelegate.swift in Sources */,
 				D921F3B32BBC1E3200C7D35E /* Routes.swift in Sources */,
 				E87E3BB32B2B0CB8003E61DF /* SceneDelegate.swift in Sources */,
 				D921F3B82BBC1E3200C7D35E /* HTTPMethod.swift in Sources */,
 				D921F3BA2BBC1E5A00C7D35E /* Fruit.swift in Sources */,
+				E8A34B282BD1353F00E91BED /* FruitesRepository.swift in Sources */,
 				E87E3BE12B32D59B003E61DF /* UITableView.swift in Sources */,
 				E87E3BD42B32BB5F003E61DF /* TaskView.swift in Sources */,
 				E87E3BD82B32D22F003E61DF /* TasksViewController.swift in Sources */,
