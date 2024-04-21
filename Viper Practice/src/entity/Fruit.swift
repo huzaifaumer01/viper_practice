@@ -2,7 +2,7 @@
 //  Fruit.swift
 //  Viper Practice
 //
-//  Created by ahsan shabir on 02/04/2024.
+//  Created by Huzaifa Umer on 02/04/2024.
 //
 
 import Foundation
@@ -14,15 +14,15 @@ struct Fruit: Codable {
   var family: String? = nil
   var order: String? = nil
   var genus: String? = nil
-  var nutritions: Nutritions? = Nutritions()
+  var nutritions: Nutritions?
 
   enum CodingKeys: String, CodingKey {
 
-    case name       = "name"
-    case id         = "id"
-    case family     = "family"
-    case order      = "order"
-    case genus      = "genus"
+    case name = "name"
+    case id = "id"
+    case family = "family"
+    case order = "order"
+    case genus = "genus"
     case nutritions = "nutritions"
   
   }
@@ -39,6 +39,5 @@ struct Fruit: Codable {
   }
 
   init() {
-
   }
 }
