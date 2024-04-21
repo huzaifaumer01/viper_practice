@@ -16,17 +16,6 @@ struct Fruit: Codable {
   var genus: String? = nil
   var nutritions: Nutritions?
 
-  enum CodingKeys: String, CodingKey {
-
-    case name = "name"
-    case id = "id"
-    case family = "family"
-    case order = "order"
-    case genus = "genus"
-    case nutritions = "nutritions"
-  
-  }
-
   init(from decoder: Decoder) throws {
     let values = try decoder.container(keyedBy: CodingKeys.self)
 

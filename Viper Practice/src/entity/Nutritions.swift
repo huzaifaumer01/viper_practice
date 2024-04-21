@@ -15,16 +15,6 @@ struct Nutritions: Codable {
   var carbohydrates: Float? = nil
   var protein: Float? = nil
 
-  enum CodingKeys: String, CodingKey {
-
-    case calories = "calories"
-    case fat = "fat"
-    case sugar = "sugar"
-    case carbohydrates = "carbohydrates"
-    case protein = "protein"
-  
-  }
-
   init(from decoder: Decoder) throws {
     let values = try decoder.container(keyedBy: CodingKeys.self)
 
