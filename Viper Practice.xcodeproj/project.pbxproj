@@ -22,14 +22,14 @@
 		E87E3BB32B2B0CB8003E61DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BB22B2B0CB8003E61DF /* SceneDelegate.swift */; };
 		E87E3BBA2B2B0CBA003E61DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BB92B2B0CBA003E61DF /* Assets.xcassets */; };
 		E87E3BBD2B2B0CBA003E61DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BBB2B2B0CBA003E61DF /* LaunchScreen.storyboard */; };
-		E87E3BCE2B32BA18003E61DF /* TaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BCD2B32BA18003E61DF /* TaskInteractor.swift */; };
-		E87E3BD02B32BA2C003E61DF /* TaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BCF2B32BA2C003E61DF /* TaskPresenter.swift */; };
-		E87E3BD22B32BA4F003E61DF /* TaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BD12B32BA4F003E61DF /* TaskRouter.swift */; };
-		E87E3BD42B32BB5F003E61DF /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BD32B32BB5F003E61DF /* TaskView.swift */; };
-		E87E3BD82B32D22F003E61DF /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BD62B32D22F003E61DF /* TasksViewController.swift */; };
-		E87E3BD92B32D22F003E61DF /* TasksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BD72B32D22F003E61DF /* TasksViewController.xib */; };
-		E87E3BDD2B32D297003E61DF /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BDB2B32D297003E61DF /* TaskTableViewCell.swift */; };
-		E87E3BDE2B32D297003E61DF /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BDC2B32D297003E61DF /* TaskTableViewCell.xib */; };
+		E87E3BCE2B32BA18003E61DF /* FruitesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BCD2B32BA18003E61DF /* FruitesInteractor.swift */; };
+		E87E3BD02B32BA2C003E61DF /* FruitesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BCF2B32BA2C003E61DF /* FruitesPresenter.swift */; };
+		E87E3BD22B32BA4F003E61DF /* FruitesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BD12B32BA4F003E61DF /* FruitesRouter.swift */; };
+		E87E3BD42B32BB5F003E61DF /* FruitesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BD32B32BB5F003E61DF /* FruitesView.swift */; };
+		E87E3BD82B32D22F003E61DF /* FruitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BD62B32D22F003E61DF /* FruitesViewController.swift */; };
+		E87E3BD92B32D22F003E61DF /* FruitesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BD72B32D22F003E61DF /* FruitesViewController.xib */; };
+		E87E3BDD2B32D297003E61DF /* FruitesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BDB2B32D297003E61DF /* FruitesTableViewCell.swift */; };
+		E87E3BDE2B32D297003E61DF /* FruitesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BDC2B32D297003E61DF /* FruitesTableViewCell.xib */; };
 		E87E3BE12B32D59B003E61DF /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BE02B32D59B003E61DF /* UITableView.swift */; };
 		E8A34B192BD1135200E91BED /* Fruites.json in Resources */ = {isa = PBXBuildFile; fileRef = E8A34B182BD112CA00E91BED /* Fruites.json */; };
 		E8A34B1E2BD1168400E91BED /* JSONFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A34B1D2BD1168400E91BED /* JSONFileManager.swift */; };
@@ -55,14 +55,14 @@
 		E87E3BB92B2B0CBA003E61DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E87E3BBC2B2B0CBA003E61DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E87E3BBE2B2B0CBA003E61DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E87E3BCD2B32BA18003E61DF /* TaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInteractor.swift; sourceTree = "<group>"; };
-		E87E3BCF2B32BA2C003E61DF /* TaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPresenter.swift; sourceTree = "<group>"; };
-		E87E3BD12B32BA4F003E61DF /* TaskRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRouter.swift; sourceTree = "<group>"; };
-		E87E3BD32B32BB5F003E61DF /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
-		E87E3BD62B32D22F003E61DF /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
-		E87E3BD72B32D22F003E61DF /* TasksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksViewController.xib; sourceTree = "<group>"; };
-		E87E3BDB2B32D297003E61DF /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
-		E87E3BDC2B32D297003E61DF /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		E87E3BCD2B32BA18003E61DF /* FruitesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitesInteractor.swift; sourceTree = "<group>"; };
+		E87E3BCF2B32BA2C003E61DF /* FruitesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitesPresenter.swift; sourceTree = "<group>"; };
+		E87E3BD12B32BA4F003E61DF /* FruitesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitesRouter.swift; sourceTree = "<group>"; };
+		E87E3BD32B32BB5F003E61DF /* FruitesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitesView.swift; sourceTree = "<group>"; };
+		E87E3BD62B32D22F003E61DF /* FruitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitesViewController.swift; sourceTree = "<group>"; };
+		E87E3BD72B32D22F003E61DF /* FruitesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitesViewController.xib; sourceTree = "<group>"; };
+		E87E3BDB2B32D297003E61DF /* FruitesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitesTableViewCell.swift; sourceTree = "<group>"; };
+		E87E3BDC2B32D297003E61DF /* FruitesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitesTableViewCell.xib; sourceTree = "<group>"; };
 		E87E3BE02B32D59B003E61DF /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		E8A34B182BD112CA00E91BED /* Fruites.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fruites.json; sourceTree = "<group>"; };
 		E8A34B1D2BD1168400E91BED /* JSONFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileManager.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		E87E3BC62B306D17003E61DF /* view */ = {
 			isa = PBXGroup;
 			children = (
-				E87E3BD32B32BB5F003E61DF /* TaskView.swift */,
+				E87E3BD32B32BB5F003E61DF /* FruitesView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 		E87E3BC72B306ED0003E61DF /* interactor */ = {
 			isa = PBXGroup;
 			children = (
-				E87E3BCD2B32BA18003E61DF /* TaskInteractor.swift */,
+				E87E3BCD2B32BA18003E61DF /* FruitesInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 		E87E3BC82B306EEA003E61DF /* presenter */ = {
 			isa = PBXGroup;
 			children = (
-				E87E3BCF2B32BA2C003E61DF /* TaskPresenter.swift */,
+				E87E3BCF2B32BA2C003E61DF /* FruitesPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 		E87E3BC92B306F07003E61DF /* router */ = {
 			isa = PBXGroup;
 			children = (
-				E87E3BD12B32BA4F003E61DF /* TaskRouter.swift */,
+				E87E3BD12B32BA4F003E61DF /* FruitesRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -199,8 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				E87E3BDA2B32D27F003E61DF /* Cells */,
-				E87E3BD62B32D22F003E61DF /* TasksViewController.swift */,
-				E87E3BD72B32D22F003E61DF /* TasksViewController.xib */,
+				E87E3BD62B32D22F003E61DF /* FruitesViewController.swift */,
+				E87E3BD72B32D22F003E61DF /* FruitesViewController.xib */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -208,8 +208,8 @@
 		E87E3BDA2B32D27F003E61DF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				E87E3BDB2B32D297003E61DF /* TaskTableViewCell.swift */,
-				E87E3BDC2B32D297003E61DF /* TaskTableViewCell.xib */,
+				E87E3BDB2B32D297003E61DF /* FruitesTableViewCell.swift */,
+				E87E3BDC2B32D297003E61DF /* FruitesTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -348,9 +348,9 @@
 			files = (
 				E87E3BBD2B2B0CBA003E61DF /* LaunchScreen.storyboard in Resources */,
 				E8A34B192BD1135200E91BED /* Fruites.json in Resources */,
-				E87E3BD92B32D22F003E61DF /* TasksViewController.xib in Resources */,
+				E87E3BD92B32D22F003E61DF /* FruitesViewController.xib in Resources */,
 				E87E3BBA2B2B0CBA003E61DF /* Assets.xcassets in Resources */,
-				E87E3BDE2B32D297003E61DF /* TaskTableViewCell.xib in Resources */,
+				E87E3BDE2B32D297003E61DF /* FruitesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,18 +361,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87E3BD22B32BA4F003E61DF /* TaskRouter.swift in Sources */,
+				E87E3BD22B32BA4F003E61DF /* FruitesRouter.swift in Sources */,
 				E8A34B1E2BD1168400E91BED /* JSONFileManager.swift in Sources */,
 				D921F39F2BBC0A8200C7D35E /* Nutritions.swift in Sources */,
 				D921F3B72BBC1E3200C7D35E /* HTTPClient.swift in Sources */,
 				D921F39B2BBC092500C7D35E /* Constants.swift in Sources */,
 				D921F3B62BBC1E3200C7D35E /* HTTPError.swift in Sources */,
 				D921F3B52BBC1E3200C7D35E /* API.swift in Sources */,
-				E87E3BDD2B32D297003E61DF /* TaskTableViewCell.swift in Sources */,
+				E87E3BDD2B32D297003E61DF /* FruitesTableViewCell.swift in Sources */,
 				E8A34B252BD11A7A00E91BED /* MockDataGenerator.swift in Sources */,
-				E87E3BCE2B32BA18003E61DF /* TaskInteractor.swift in Sources */,
+				E87E3BCE2B32BA18003E61DF /* FruitesInteractor.swift in Sources */,
 				D921F3B42BBC1E3200C7D35E /* APIConfig.swift in Sources */,
-				E87E3BD02B32BA2C003E61DF /* TaskPresenter.swift in Sources */,
+				E87E3BD02B32BA2C003E61DF /* FruitesPresenter.swift in Sources */,
 				E8A34B232BD1183000E91BED /* Strings.swift in Sources */,
 				E8A34B202BD116DB00E91BED /* AppConfiguration.swift in Sources */,
 				E87E3BB12B2B0CB8003E61DF /* AppDelegate.swift in Sources */,
@@ -382,8 +382,8 @@
 				D921F3BA2BBC1E5A00C7D35E /* Fruit.swift in Sources */,
 				E8A34B282BD1353F00E91BED /* FruitesRepository.swift in Sources */,
 				E87E3BE12B32D59B003E61DF /* UITableView.swift in Sources */,
-				E87E3BD42B32BB5F003E61DF /* TaskView.swift in Sources */,
-				E87E3BD82B32D22F003E61DF /* TasksViewController.swift in Sources */,
+				E87E3BD42B32BB5F003E61DF /* FruitesView.swift in Sources */,
+				E87E3BD82B32D22F003E61DF /* FruitesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

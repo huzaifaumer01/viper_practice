@@ -1,5 +1,5 @@
 //
-//  TaskTableViewCell.swift
+//  FruitesTableViewCell.swift
 //  Viper Practice
 //
 //  Created by Huzaifa Umer on 20/12/2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TaskTableViewCell: UITableViewCell {
+class FruitesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -26,8 +26,8 @@ class TaskTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(task: Fruit){
-        titleLabel.text = task.name
-        detailLabel.text = task.family
+    func configureCell(fruit: Fruit){
+        titleLabel.text = fruit.name
+        detailLabel.text = fruit.family
     }
 }

@@ -1,5 +1,5 @@
 //
-//  TasksViewController.swift
+//  FruitesViewController.swift
 //  Viper Practice
 //
 //  Created by Huzaifa Umer on 20/12/2023.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class TasksViewController: UIViewController {
+class FruitesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var presenter : TaskPresenterProtocol?
-    var tasks = [Fruit]()
+    var presenter : FruitesPresenterProtocol?
+    var fruites = [Fruit]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,23 +22,23 @@ class TasksViewController: UIViewController {
 
 }
 
-extension TasksViewController : TaskViewProtocol {
-    func displayTasks(_ tasks: [Fruit]) {
-        self.tasks.append(contentsOf: tasks)
+extension FruitesViewController : FruitesViewProtocol {
+    func displayFruites(_ fruites: [Fruit]) {
+        self.fruites.append(contentsOf: fruites)
         DispatchQueue.main.async {[weak self] in
             self?.tableView.reloadData()
         }
     }
 }
 
-extension TasksViewController : UITableViewDataSource, UITableViewDelegate {
+extension FruitesViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tasks.count
+        return fruites.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.register(TaskTableViewCell.self, indexPath: indexPath)
-        cell.configureCell(task: tasks[indexPath.row])
+        let cell = tableView.register(FruitesTableViewCell.self, indexPath: indexPath)
+        cell.configureCell(fruit: fruites[indexPath.row])
         return cell
     }
 }

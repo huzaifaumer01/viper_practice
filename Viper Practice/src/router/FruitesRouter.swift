@@ -1,5 +1,5 @@
 //
-//  TaskRouter.swift
+//  FruitesRouter.swift
 //  Viper Practice
 //
 //  Created by Huzaifa Umer on 20/12/2023.
@@ -8,24 +8,24 @@
 import Foundation
 import UIKit
 
-protocol TaskRouterProtocol : AnyObject {
-    func navigateToTaskDetail(for task: Task)
+protocol FruitesRouterProtocol : AnyObject {
+    func navigateToFruitDetail(for fruit: Fruit)
 }
 
-class TaskRouter {
+class FruitesRouter {
     
-    func setupTaskAsRootViewController() {
+    func setupFruitesAsRootViewController() {
         let nav = UINavigationController()
-        let taskView = TasksViewController()
+        let fruitView = FruitesViewController()
         
-        let interactor = TaskInteractor()
-        let presenter = TaskPresenter()
+        let interactor = FruitesInteractor()
+        let presenter = FruitesPresenter()
         
-        taskView.presenter = presenter
-        presenter.view = taskView
+        fruitView.presenter = presenter
+        presenter.view = fruitView
         presenter.interactor = interactor
         interactor.presenter = presenter
-        nav.viewControllers = [taskView]
+        nav.viewControllers = [fruitView]
         
         let wsceen = UIApplication.shared.connectedScenes.first as? UIWindowScene
         wsceen?.windows.first?.rootViewController = nav

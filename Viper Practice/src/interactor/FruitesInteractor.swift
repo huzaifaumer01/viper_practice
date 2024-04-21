@@ -1,5 +1,5 @@
 //
-//  TaskInteractor.swift
+//  FruitesInteractor.swift
 //  Viper Practice
 //
 //  Created by Huzaifa Umer on 20/12/2023.
@@ -7,20 +7,20 @@
 
 import Foundation
 
-protocol TaskInteractorProtocol : AnyObject {
-    func fetchTasks()
+protocol FruitesInteractorProtocol : AnyObject {
+    func fetchFruites()
 }
 
-class TaskInteractor : TaskInteractorProtocol {
+class FruitesInteractor : FruitesInteractorProtocol {
 
-    var presenter: TaskPresenterProtocol?
+    var presenter: FruitesPresenterProtocol?
     
-    func fetchTasks() {
+    func fetchFruites() {
         let repo = FruitesRepository()
         repo.fetchFruitesRepository(isMockData: true, completion: { result in
             switch result {
             case .success(let response):
-                self.presenter?.taskFetched(response)
+                self.presenter?.fruitesFetched(response)
             case .failure(let error):
                 print(error.localizedDescription)
             }
