@@ -8,5 +8,5 @@
 import Foundation
 
 protocol FruitesViewProtocol : AnyObject {
-    func displayFruites(_ fruites: [Fruit])
+    func displayFruites()
 }

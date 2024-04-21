@@ -10,6 +10,7 @@ import Foundation
 protocol FruitesPresenterProtocol : AnyObject {
     func loadView()
     func fruitesFetched(_ fruits: [Fruit])
+    func getFruites() -> [Fruit]
 }
 
 class FruitesPresenter : FruitesPresenterProtocol {
@@ -18,11 +19,18 @@ class FruitesPresenter : FruitesPresenterProtocol {
     var interactor: FruitesInteractorProtocol?
     var router: FruitesRouterProtocol?
     
+    private var fruites = [Fruit]()
+    
     func loadView() {
         interactor?.fetchFruites()
     }
     
     func fruitesFetched(_ fruites: [Fruit]) {
-        view?.displayFruites(fruites)
+        self.fruites.append(contentsOf: fruites)
+        view?.displayFruites()
+    }
+    
+    func getFruites() -> [Fruit] {
+        return fruites
     }
 }
