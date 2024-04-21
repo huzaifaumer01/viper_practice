@@ -18,6 +18,7 @@
 		D921F3B72BBC1E3200C7D35E /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921F3B12BBC1E3200C7D35E /* HTTPClient.swift */; };
 		D921F3B82BBC1E3200C7D35E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921F3B22BBC1E3200C7D35E /* HTTPMethod.swift */; };
 		D921F3BA2BBC1E5A00C7D35E /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921F3B92BBC1E5A00C7D35E /* Fruit.swift */; };
+		D93854BC2BD52521008CB027 /* FruitesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93854BB2BD52521008CB027 /* FruitesApi.swift */; };
 		E87E3BB12B2B0CB8003E61DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BB02B2B0CB8003E61DF /* AppDelegate.swift */; };
 		E87E3BB32B2B0CB8003E61DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E3BB22B2B0CB8003E61DF /* SceneDelegate.swift */; };
 		E87E3BBA2B2B0CBA003E61DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87E3BB92B2B0CBA003E61DF /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		D921F3B12BBC1E3200C7D35E /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		D921F3B22BBC1E3200C7D35E /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		D921F3B92BBC1E5A00C7D35E /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		D93854BB2BD52521008CB027 /* FruitesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitesApi.swift; sourceTree = "<group>"; };
 		E87E3BAD2B2B0CB8003E61DF /* Viper Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87E3BB02B2B0CB8003E61DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E87E3BB22B2B0CB8003E61DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				D921F3B02BBC1E3200C7D35E /* HTTPError.swift */,
 				D921F3B22BBC1E3200C7D35E /* HTTPMethod.swift */,
 				D921F3AD2BBC1E3200C7D35E /* Routes.swift */,
+				D93854BB2BD52521008CB027 /* FruitesApi.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				E8A34B232BD1183000E91BED /* Strings.swift in Sources */,
 				E8A34B202BD116DB00E91BED /* AppConfiguration.swift in Sources */,
 				E87E3BB12B2B0CB8003E61DF /* AppDelegate.swift in Sources */,
+				D93854BC2BD52521008CB027 /* FruitesApi.swift in Sources */,
 				D921F3B32BBC1E3200C7D35E /* Routes.swift in Sources */,
 				E87E3BB32B2B0CB8003E61DF /* SceneDelegate.swift in Sources */,
 				D921F3B82BBC1E3200C7D35E /* HTTPMethod.swift in Sources */,

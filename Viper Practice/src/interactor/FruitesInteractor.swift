@@ -17,7 +17,7 @@ class FruitesInteractor : FruitesInteractorProtocol {
     
     func fetchFruites() {
         let repo = FruitesRepository()
-        repo.fetchFruitesRepository(isMockData: true, completion: { result in
+        repo.fetchFruitesRepository(isMockData: false, completion: { result in
             switch result {
             case .success(let response):
                 self.presenter?.fruitesFetched(response)

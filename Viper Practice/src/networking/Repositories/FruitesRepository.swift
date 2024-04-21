@@ -20,11 +20,7 @@ final class FruitesRepository: FruitesRepositoryProtocol {
             let mockData = MockDataGenerator().mockFruitesData()
             completion(mockData)
         } else {
-            let apiConfig = APIConfig(scheme: kApiScheme,
-                                              host: kApiHost)
-            let apiFetcher = APIFetcher()
-            let api = API(apiConfig: apiConfig, apiFetcher: apiFetcher)
-
+            let api = FruitesApi()
             api.getFruites { result in
                 switch result {
                 case .success(let response):

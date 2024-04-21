@@ -7,23 +7,27 @@
 
 import Foundation
 
-class API {
-    private let apiConfig: APIConfig
-    private let apiFetcher: HTTPClient
-
-    init(apiConfig: APIConfig, apiFetcher: HTTPClient) {
-        self.apiConfig = apiConfig
-        self.apiFetcher = apiFetcher
-    }
+protocol APIProtocol {
+   func get<T: Decodable>(completion: @escaping (Result<T ,HTTPError>) -> Void)
 }
 
-extension API {
-    func getFruites(completion: @escaping (Result<[Fruit],HTTPError>) -> Void) {
+class API: APIProtocol {
+    private let apiConfig: APIConfig
+    private let apiFetcher: HTTPClient
+    private let apiPath: String
+
+    init(apiConfig: APIConfig, apiFetcher: HTTPClient, apiPath: String) {
+        self.apiConfig = apiConfig
+        self.apiFetcher = apiFetcher
+        self.apiPath = apiPath
+    }
+    
+    func get<T: Decodable>(completion: @escaping (Result<T ,HTTPError>) -> Void) {
 
         var components = URLComponents()
         components.scheme = apiConfig.scheme
         components.host = apiConfig.host
-        components.path = Routes.fruites.callAsFunction()
+        components.path = apiPath
 
         guard let url = components.url else {
             completion(.failure(.invalidUrl))
