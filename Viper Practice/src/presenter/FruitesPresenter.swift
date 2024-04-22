@@ -8,29 +8,28 @@
 import Foundation
 
 protocol FruitesPresenterProtocol : AnyObject {
-    func loadView()
+    func loadData()
     func fruitesFetched(_ fruits: [Fruit])
-    func getFruites() -> [Fruit]
+    var fruites: [Fruit] { get }
 }
 
-class FruitesPresenter : FruitesPresenterProtocol {
+final class FruitesPresenter : FruitesPresenterProtocol {
+    var fruites: [Fruit] = []
     
     weak var view : FruitesViewProtocol?
     var interactor: FruitesInteractorProtocol?
     var router: FruitesRouterProtocol?
     
-    private var fruites = [Fruit]()
+//    private var fruites = [Fruit]()
     
-    func loadView() {
+    // MARK: - FruitesPresenterProtocol
+    
+    func loadData() {
         interactor?.fetchFruites()
     }
     
     func fruitesFetched(_ fruites: [Fruit]) {
         self.fruites.append(contentsOf: fruites)
         view?.displayFruites()
-    }
-    
-    func getFruites() -> [Fruit] {
-        return fruites
     }
 }

@@ -7,37 +7,49 @@
 
 import UIKit
 
-class FruitesViewController: UIViewController {
+final class FruitesViewController: 
+    UIViewController,
+    UITableViewDataSource,
+    UITableViewDelegate,
+    FruitesViewProtocol {
 
     @IBOutlet weak var tableView: UITableView!
     var presenter : FruitesPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = Strings.Title.fruites
         tableView.dataSource = self
         tableView.delegate = self
-        presenter?.loadView()
+        presenter?.loadData()
     }
 
-}
-
-extension FruitesViewController : FruitesViewProtocol {
+    // MARK: - FruitesViewProtocol
+    
     func displayFruites() {
         DispatchQueue.main.async {[weak self] in
             self?.tableView.reloadData()
         }
     }
-}
-
-extension FruitesViewController : UITableViewDataSource, UITableViewDelegate {
+    
+    // MARK: - UITableViewDataSource
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter?.getFruites().count ?? 0
+        return presenter?.fruites.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.register(FruitesTableViewCell.self, indexPath: indexPath)
-        let fruites = presenter!.getFruites()
-        cell.configureCell(fruit: fruites[indexPath.row])
+        if let fruit = presenter?.fruites {
+            cell.configureCell(fruit: fruit[indexPath.row])
+        }
+        
         return cell
+    }
+    
+    // MARK: - UITableViewDelegate
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // MARK: - TODO
     }
 }

@@ -9,11 +9,11 @@ import Foundation
 
 struct Nutritions: Codable {
 
-  var calories: Float? = nil
-  var fat: Float? = nil
-  var sugar: Float? = nil
-  var carbohydrates: Float? = nil
-  var protein: Float? = nil
+  var calories: Float?
+  var fat: Float?
+  var sugar: Float?
+  var carbohydrates: Float?
+  var protein: Float?
 
   init(from decoder: Decoder) throws {
     let values = try decoder.container(keyedBy: CodingKeys.self)

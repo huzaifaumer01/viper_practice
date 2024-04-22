@@ -9,11 +9,11 @@ import Foundation
 
 struct Fruit: Codable {
 
-  var name: String? = nil
-  var id: Int? = nil
-  var family: String? = nil
-  var order: String? = nil
-  var genus: String? = nil
+  var name: String?
+  var id: Int?
+  var family: String?
+  var order: String?
+  var genus: String?
   var nutritions: Nutritions?
 
   init(from decoder: Decoder) throws {

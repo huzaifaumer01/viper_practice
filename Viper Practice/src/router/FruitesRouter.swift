@@ -12,7 +12,7 @@ protocol FruitesRouterProtocol : AnyObject {
     func navigateToFruitDetail(for fruit: Fruit)
 }
 
-class FruitesRouter {
+final class FruitesRouter {
     
     func setupFruitesAsRootViewController() {
         let nav = UINavigationController()

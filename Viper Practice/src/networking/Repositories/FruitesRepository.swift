@@ -14,14 +14,18 @@ protocol FruitesRepositoryProtocol: AnyObject {
 
 final class FruitesRepository: FruitesRepositoryProtocol {
     
+    let fruitesApi = FruitesApi()
+    
+    // MARK: - FruitesRepositoryProtocol
+    
     func fetchFruitesRepository(isMockData: Bool, completion: @escaping (Result<[Fruit], Error>) -> Void) {
         
         if isMockData {
             let mockData = MockDataGenerator().mockFruitesData()
             completion(mockData)
         } else {
-            let api = FruitesApi()
-            api.getFruites { result in
+            
+            fruitesApi.getFruites { result in
                 switch result {
                 case .success(let response):
                     completion(.success(response))
@@ -32,5 +36,4 @@ final class FruitesRepository: FruitesRepositoryProtocol {
             }
         }
     }
-    
 }

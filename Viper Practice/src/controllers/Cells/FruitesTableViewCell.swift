@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FruitesTableViewCell: UITableViewCell {
+final class FruitesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var titleLabel: UILabel!

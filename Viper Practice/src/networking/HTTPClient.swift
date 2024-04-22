@@ -7,12 +7,15 @@
 
 import Foundation
 
-protocol HTTPClient {
+protocol HTTPClientProtocol {
     func request<T: Decodable>(request: URLRequest,
                                completion: @escaping (Result<T, HTTPError>) -> Void)
 }
 
-class APIFetcher: HTTPClient {
+final class APIFetcher: HTTPClientProtocol {
+    
+    // MARK: - HTTPClientProtocol
+    
     func request<T: Decodable>(request: URLRequest, completion: @escaping (Result<T, HTTPError>) -> Void) {
 
         URLSession.shared.dataTask(with: request) { data, urlResponse, error in
@@ -39,6 +42,4 @@ class APIFetcher: HTTPClient {
             }
         }.resume()
     }
-
-
 }

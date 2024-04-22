@@ -11,13 +11,16 @@ protocol FruitesInteractorProtocol : AnyObject {
     func fetchFruites()
 }
 
-class FruitesInteractor : FruitesInteractorProtocol {
+final class FruitesInteractor : FruitesInteractorProtocol {
 
     var presenter: FruitesPresenterProtocol?
+    let fruitesRepository = FruitesRepository()
+    
+    // MARK: - FruitesInteractorProtocol
     
     func fetchFruites() {
-        let repo = FruitesRepository()
-        repo.fetchFruitesRepository(isMockData: false, completion: { result in
+        
+        fruitesRepository.fetchFruitesRepository(isMockData: false, completion: { result in
             switch result {
             case .success(let response):
                 self.presenter?.fruitesFetched(response)

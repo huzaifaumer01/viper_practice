@@ -2,7 +2,7 @@
 //  FruitesApi.swift
 //  Viper Practice
 //
-//  Created by ahsan shabir on 21/04/2024.
+//  Created by Huzaifa Umer on 21/04/2024.
 //
 
 import Foundation
@@ -11,8 +11,9 @@ protocol FruitesApiProtocol {
    func getFruites(completion: @escaping (Result<[Fruit],HTTPError>) -> Void)
 }
 
-class FruitesApi: FruitesApiProtocol {
+final class FruitesApi: FruitesApiProtocol {
     
+    // MARK: - FruitesApiProtocol
     func getFruites(completion: @escaping (Result<[Fruit],HTTPError>) -> Void) {
         let apiConfig = APIConfig(scheme: kApiScheme,
                                           host: kApiHost)
