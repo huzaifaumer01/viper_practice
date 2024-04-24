@@ -6,22 +6,24 @@
 //
 
 import Foundation
+import UIKit
 
 protocol FruitesPresenterProtocol : AnyObject {
     func loadData()
     func fruitesFetched(_ fruits: [Fruit])
+    func didSelectFruit(with fruit: Fruit, fromView: UIViewController)
     var fruites: [Fruit] { get }
+    
 }
 
 final class FruitesPresenter : FruitesPresenterProtocol {
+
     var fruites: [Fruit] = []
     
     weak var view : FruitesViewProtocol?
     var interactor: FruitesInteractorProtocol?
     var router: FruitesRouterProtocol?
-    
-//    private var fruites = [Fruit]()
-    
+        
     // MARK: - FruitesPresenterProtocol
     
     func loadData() {
@@ -31,5 +33,9 @@ final class FruitesPresenter : FruitesPresenterProtocol {
     func fruitesFetched(_ fruites: [Fruit]) {
         self.fruites.append(contentsOf: fruites)
         view?.displayFruites()
+    }
+    
+    func didSelectFruit(with fruit: Fruit, fromView: UIViewController) {
+        router?.navigateToFruitDetail(for: fruit, fromView: fromView)
     }
 }
