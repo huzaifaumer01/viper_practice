@@ -51,7 +51,7 @@ final class FruitesViewController:
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {        
         if let fruit = presenter?.fruites {
-            presenter?.didSelectFruit(with: fruit[indexPath.row], fromView: self)
+            presenter?.didSelectFruit(with: fruit[indexPath.row])
         }
     }
 }

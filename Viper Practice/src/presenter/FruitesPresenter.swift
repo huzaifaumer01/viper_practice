@@ -11,7 +11,7 @@ import UIKit
 protocol FruitesPresenterProtocol : AnyObject {
     func loadData()
     func fruitesFetched(_ fruits: [Fruit])
-    func didSelectFruit(with fruit: Fruit, fromView: UIViewController)
+    func didSelectFruit(with fruit: Fruit)
     var fruites: [Fruit] { get }
     
 }
@@ -35,7 +35,7 @@ final class FruitesPresenter : FruitesPresenterProtocol {
         view?.displayFruites()
     }
     
-    func didSelectFruit(with fruit: Fruit, fromView: UIViewController) {
-        router?.navigateToFruitDetail(for: fruit, fromView: fromView)
+    func didSelectFruit(with fruit: Fruit) {
+        router?.navigateToFruitDetail(for: fruit)
     }
 }

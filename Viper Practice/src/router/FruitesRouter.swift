@@ -9,35 +9,42 @@ import Foundation
 import UIKit
 
 protocol FruitesRouterProtocol : AnyObject {
-    func navigateToFruitDetail(for fruit: Fruit, fromView: UIViewController)
+    func navigateToFruitDetail(for fruit: Fruit)
 }
 
 final class FruitesRouter: FruitesRouterProtocol {
     
-    func navigateToFruitDetail(for fruit: Fruit, fromView: UIViewController) {
-        let vc = FruitDetailViewController()
-        let presenter = FruitDetailPresenter()
-        let interactor = FruitDetailInteractor()
-        presenter.fruit = fruit
-        vc.presenter = presenter
-        fromView.navigationController?.pushViewController(vc, animated: true)
-    }
+    weak var sourceViewController: UIViewController?
     
     func setupFruitesAsRootViewController() {
         let nav = UINavigationController()
+        
         let fruitView = FruitesViewController()
         let presenter = FruitesPresenter()
         let interactor = FruitesInteractor()
         let router = FruitesRouter()
-        fruitView.presenter = presenter
+        
         presenter.view = fruitView
         presenter.interactor = interactor
-        interactor.presenter = presenter
         presenter.router = router
+        interactor.presenter = presenter
+        fruitView.presenter = presenter
+        router.sourceViewController = fruitView
+        
         nav.viewControllers = [fruitView]
         
         let wsceen = UIApplication.shared.connectedScenes.first as? UIWindowScene
         wsceen?.windows.first?.rootViewController = nav
         wsceen?.windows.first?.makeKeyAndVisible()
+    }
+    
+    // MARK: - FruitesRouterProtocol
+    
+    func navigateToFruitDetail(for fruit: Fruit) {
+        let vc = FruitDetailViewController()
+        let presenter = FruitDetailPresenter()
+        presenter.fruit = fruit
+        vc.presenter = presenter
+        sourceViewController?.navigationController?.pushViewController(vc, animated: true)
     }
 }

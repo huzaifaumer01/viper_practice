@@ -22,7 +22,6 @@ final class FruitDetailPresenter : FruitDetailPresenterProtocol {
     // MARK: - FruitDetailPresenterProtocol
     
     func loadData() {
-        interactor?.fetchFruitDetail()
         view?.displayFruitDetail()
     }
 }
