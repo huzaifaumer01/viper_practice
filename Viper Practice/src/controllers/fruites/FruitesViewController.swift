@@ -11,8 +11,8 @@ final class FruitesViewController:
     UIViewController,
     UITableViewDataSource,
     UITableViewDelegate,
-    FruitesViewProtocol {
-
+    FruitesViewProtocol{
+    
     @IBOutlet weak var tableView: UITableView!
     var presenter : FruitesPresenterProtocol?
     
@@ -49,7 +49,9 @@ final class FruitesViewController:
     
     // MARK: - UITableViewDelegate
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // MARK: - TODO
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {        
+        if let fruit = presenter?.fruites {
+            presenter?.didSelectFruit(with: fruit[indexPath.row])
+        }
     }
 }

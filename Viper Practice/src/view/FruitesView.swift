@@ -10,3 +10,7 @@ import Foundation
 protocol FruitesViewProtocol : AnyObject {
     func displayFruites()
 }
+
+protocol FruitDetailViewProtocol : AnyObject {
+    func displayFruitDetail()
+}
