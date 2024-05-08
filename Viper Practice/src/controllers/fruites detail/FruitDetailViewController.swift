@@ -12,8 +12,6 @@ class FruitDetailViewController:
     UITableViewDataSource,
     FruitDetailViewProtocol {
     
-    
-
     @IBOutlet weak var tableView: UITableView!
     var presenter : FruitDetailPresenterProtocol?
     

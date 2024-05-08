@@ -13,7 +13,6 @@ protocol FruitesPresenterProtocol : AnyObject {
     func fruitesFetched(_ fruits: [Fruit])
     func didSelectFruit(with fruit: Fruit)
     var fruites: [Fruit] { get }
-    
 }
 
 final class FruitesPresenter : FruitesPresenterProtocol {

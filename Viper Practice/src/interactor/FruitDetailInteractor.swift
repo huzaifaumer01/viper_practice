@@ -15,10 +15,8 @@ final class FruitDetailInteractor : FruitDetailInteractorProtocol {
 
     var presenter: FruitDetailPresenterProtocol?
     
-    
     // MARK: - FruitDetailInteractorProtocol
     
     func fetchFruitDetail() {
-        
     }
 }

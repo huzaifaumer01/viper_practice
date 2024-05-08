@@ -15,16 +15,10 @@ final class FruitesTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         cardView.layer.cornerRadius = 16
-        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    
+    // MARK: - Public Methods
     
     func configureCell(fruit: Fruit){
         titleLabel.text = fruit.name
